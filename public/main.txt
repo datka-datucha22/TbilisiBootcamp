@@ -1,0 +1,5 @@
+Fonts
+
+for downloads - font-family: "ALK Sanet", sans-serif;
+for Headers and home,about etc... - font-family: "Arial GEO Bold", sans-serif;
+for whole body - font-family: "BPG Glaho WEB Caps", sans-serif;
