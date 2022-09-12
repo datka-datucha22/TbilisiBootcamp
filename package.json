@@ -1,9 +1,5 @@
 {
-<<<<<<< HEAD
-  "homepage": "https://github.com/datka-datucha22/TbilisiBootcamp.git",
-=======
   "homepage": "https://datka-datucha22.github.io/TbilisiBootcamp/",
->>>>>>> 00de8e3506c86fa8673a8acd8accd8d063029b04
   "name": "react-tgthr",
   "version": "0.1.0",
   "private": true,
