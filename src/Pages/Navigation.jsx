@@ -6,9 +6,9 @@ export default function Navigation() {
       <nav>
         <ul>
           <li><NavLink to='/'>Home</NavLink></li>
-          <li><NavLink to='contacts'>Contacts</NavLink></li>
-          <li><NavLink to='about'>About</NavLink></li>
-          <li><NavLink to='classrooms'>Classrooms</NavLink></li>
+          <li><NavLink to='/contact'>Contacts</NavLink></li>
+          <li><NavLink to='/about'>About</NavLink></li>
+          <li><NavLink to='/classroom'>Classrooms</NavLink></li>
         </ul>
       </nav>
       <Outlet />
