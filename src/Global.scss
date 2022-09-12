@@ -1,0 +1,37 @@
+// WEBSITE STYLES
+page-container {
+    width: 100%;
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+// COLORS AND FONTS
+$blue: #5680E9;
+$blueWhite : #84CEEB;
+$sky : #5AB9EA;
+$grey: #C1C8E4;
+$purple : #7760D0;
+
+// Header
+header {
+    width: 100%;
+    max-width: 1920px;
+    background-color: rgb(201, 23, 14);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo {
+    width: 100px;
+}
+
+nav {
+    width: fit-content;
+    ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap:20px;
+    }
+}
