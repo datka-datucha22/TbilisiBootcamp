@@ -5,8 +5,12 @@ import Contact from "./Pages/Contact";
 import About from "./Pages/About";
 import Classroom from "./Pages/Classroom";
 import Error from "./Pages/Error";
+
+import './Reset.css'
+import './Global.css'
 function App() {
   return (
+    <div className='page-container'>
     <Routes>
       <Route path="/" element={<Navigation />}>
         <Route index element={<Home />} />
@@ -16,6 +20,7 @@ function App() {
       </Route>
       <Route path="*" element={<Error />} />
     </Routes>
+    </div>
   );
 }
 

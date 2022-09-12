@@ -1,0 +1,14 @@
+.nav-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;  
+}
+.nav-item img{
+    width: 30px;
+    margin-right: 10px;
+    pointer-events: none;
+}
+.nav-item p {
+    pointer-events: none;
+}
