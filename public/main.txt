@@ -3,3 +3,10 @@ Fonts
 for downloads - font-family: "ALK Sanet", sans-serif;
 for Headers and home,about etc... - font-family: "Arial GEO Bold", sans-serif;
 for whole body - font-family: "BPG Glaho WEB Caps", sans-serif;
+
+Colors
+blue - #5680E9
+blueWhite - #84CEEB
+sky - #5AB9EA
+grey - #C1C8E4
+purple - #7760D0
