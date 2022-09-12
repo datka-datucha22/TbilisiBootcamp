@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/TbilisiBootcamp/static/css/main.e6c13ad2.css",
-    "main.js": "/TbilisiBootcamp/static/js/main.a7e3dab8.js",
+    "main.js": "/TbilisiBootcamp/static/js/main.4b30443e.js",
     "static/js/787.0bbfc8ff.chunk.js": "/TbilisiBootcamp/static/js/787.0bbfc8ff.chunk.js",
     "index.html": "/TbilisiBootcamp/index.html",
     "main.e6c13ad2.css.map": "/TbilisiBootcamp/static/css/main.e6c13ad2.css.map",
-    "main.a7e3dab8.js.map": "/TbilisiBootcamp/static/js/main.a7e3dab8.js.map",
+    "main.4b30443e.js.map": "/TbilisiBootcamp/static/js/main.4b30443e.js.map",
     "787.0bbfc8ff.chunk.js.map": "/TbilisiBootcamp/static/js/787.0bbfc8ff.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e6c13ad2.css",
-    "static/js/main.a7e3dab8.js"
+    "static/js/main.4b30443e.js"
   ]
 }
