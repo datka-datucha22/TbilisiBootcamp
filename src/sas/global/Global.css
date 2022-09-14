@@ -43,7 +43,7 @@ nav ul li {
 
 .classroom {
   width: 100%;
-  min-height: calc(100vh - 100px);
+  min-height: calc(100vh - 120px);
   background: linear-gradient(to right, #84CEEB, #5680E9);
   display: flex;
   align-items: center;

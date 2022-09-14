@@ -2,7 +2,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: fit-content;
+    width: 200px;
+
 }
 
 .nav-item img {
@@ -11,11 +12,40 @@
     pointer-events: none;
 }
 
+.nav-item:hover {
+    transform: scale(1.3);
+    font-weight: bold;
+    color: #FFF01F;
+}
+.nav-item:hover img{
+    width: 45px !important;
+    margin-right: 5px;
+}
+
+.active .nav-item{
+    transform: scale(1.3);
+    font-weight: bold;
+    color: #FFF01F;
+}
+.active .nav-item img{
+    width: 35px;
+}
+
 .nav-item p {
     pointer-events: none;
+    padding-top: 5px;
+    font-family: "BPG Glaho WEB Caps",sans-serif;
+    letter-spacing: 2px;
+    font-weight: bold;
 }
+
 
 .logo {
     background-color: #8666e7;
     width: 100px;
+}
+@keyframes big {
+    100%{
+        transform: scale(1.3);
+    }
 }
