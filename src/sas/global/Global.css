@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Antonio&display=swap");
+
 .page-container {
   width: 100%;
   max-width: 1920px;
@@ -31,19 +32,21 @@ nav {
   width: -moz-fit-content;
   width: fit-content;
 }
+
 nav ul {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 20px;
 }
+
 nav ul li {
   font-family: "Roboto Mono";
 }
 
 .classroom {
   width: 100%;
-  min-height: calc(100vh - 100px);
+  min-height: calc(100vh - 120px);
   background: linear-gradient(to right, #84CEEB, #5680E9);
   display: flex;
   align-items: center;
@@ -56,6 +59,7 @@ nav ul li {
   flex-direction: column;
   gap: 60px;
 }
+
 .quiz input {
   width: 300px;
   height: 150px;
@@ -68,9 +72,11 @@ nav ul li {
   font-family: "Antonio";
   color: #7760D0;
 }
+
 .quiz input:focus {
   outline: none;
 }
+
 .quiz button {
   width: 180px;
   height: 70px;
@@ -93,7 +99,10 @@ nav ul li {
     transform: scale(1.2);
   }
 }
+
 .animateButtons {
   -webkit-animation: buttons 1s infinite linear alternate;
-          animation: buttons 1s infinite linear alternate;
-}/*# sourceMappingURL=Global.css.map */
+  animation: buttons 1s infinite linear alternate;
+}
+
+/*# sourceMappingURL=Global.css.map */
