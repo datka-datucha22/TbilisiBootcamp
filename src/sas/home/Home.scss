@@ -1,0 +1,68 @@
+/////////for number input arrows//////
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+
+
+@mixin label {
+    font-family: "ALK Sanet", sans-serif;
+    font-size: 3em;
+    color: #ffee00;
+}
+
+@mixin input {
+    width: 30%;
+    height: 50px;
+    font-size: 1.5em;
+    border: 0;
+    margin: 1% 0;
+
+
+    &:focus {
+        outline: none;
+    }
+}
+
+
+
+.home {
+    width: 100%;
+    background: linear-gradient(to right, #84CEEB, #5680E9);
+    min-height: calc(100vh - 120px);
+}
+
+.bootcamp-form {
+    min-height: calc(100vh - 120px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 30%;
+}
+
+.form-name-label,
+.form-email-label,
+.form-number-label,
+.form-age-label {
+    @include label;
+}
+
+.form-name-input,
+.form-email-input,
+.form-number-input,
+.form-age-input {
+    @include input;
+}
+
+.form-button-input {
+    width: 15%;
+    font-size: 2.5em;
+    border: 0;
+
+    &:focus {
+        outline: none;
+    }
+}
