@@ -34,7 +34,6 @@ export const ContactUs = () => {
             <label className="form-number-label">ნომერი</label>
             <input className="form-number-input" type="number" name="number" placeholder="ნომერი" />
 
-
             <input className="form-button-input" type="submit" value="გაგზავნა" />
         </form >
     );
