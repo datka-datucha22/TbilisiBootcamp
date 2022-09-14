@@ -7,19 +7,19 @@ import Classroom from "./Pages/Classroom";
 import Error from "./Pages/Error";
 
 import './Reset.css'
-import './Global.css'
+import '../src/sas/global/Global.css'
 function App() {
   return (
     <div className='page-container'>
-    <Routes>
-      <Route path="/" element={<Navigation />}>
-        <Route index element={<Home />} />
-        <Route path="contact" element={<Contact />} />
-        <Route path="about" element={<About />} />
-        <Route path="classroom" element={<Classroom />} />
-      </Route>
-      <Route path="*" element={<Error />} />
-    </Routes>
+      <Routes>
+        <Route path="/" element={<Navigation />}>
+          <Route index element={<Home />} />
+          <Route path="contact" element={<Contact />} />
+          <Route path="about" element={<About />} />
+          <Route path="classroom" element={<Classroom />} />
+        </Route>
+        <Route path="*" element={<Error />} />
+      </Routes>
     </div>
   );
 }

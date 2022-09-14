@@ -1,5 +1,5 @@
 // WEBSITE STYLES
-page-container {
+.page-container {
     width: 100%;
     max-width: 1920px;
     margin: 0 auto;
@@ -16,7 +16,7 @@ $purple : #7760D0;
 header {
     width: 100%;
     max-width: 1920px;
-    background-color: rgb(201, 23, 14);
+    background-color: #957be0;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -28,10 +28,11 @@ header {
 
 nav {
     width: fit-content;
+
     ul {
         display: flex;
         justify-content: center;
         align-items: center;
-        gap:20px;
+        gap: 20px;
     }
 }

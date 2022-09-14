@@ -1,4 +1,4 @@
-page-container {
+.page-container {
   width: 100%;
   max-width: 1920px;
   margin: 0 auto;
@@ -7,14 +7,10 @@ page-container {
 header {
   width: 100%;
   max-width: 1920px;
-  background-color: rgb(201, 23, 14);
+  background-color: #957be0;
   display: flex;
   justify-content: space-around;
   align-items: center;
-}
-
-.logo {
-  width: 100px;
 }
 
 nav {
@@ -22,9 +18,12 @@ nav {
   width: -moz-fit-content;
   width: fit-content;
 }
+
 nav ul {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 20px;
-}/*# sourceMappingURL=Global.css.map */
+}
+
+/*# sourceMappingURL=Global.css.map */
