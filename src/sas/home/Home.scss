@@ -1,3 +1,33 @@
+/////////for number input arrows//////
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+
+
+@mixin label {
+    font-family: "ALK Sanet", sans-serif;
+    font-size: 3em;
+    color: #ffee00;
+}
+
+@mixin input {
+    width: 30%;
+    height: 50px;
+    font-size: 1.5em;
+    border: 0;
+    margin: 1% 0;
+
+
+    &:focus {
+        outline: none;
+    }
+}
+
+
+
 .home {
     width: 100%;
     background: linear-gradient(to right, #84CEEB, #5680E9);
@@ -5,73 +35,34 @@
 }
 
 .bootcamp-form {
-    height: 100%;
     min-height: calc(100vh - 120px);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-left: 20%;
+    margin-left: 30%;
 }
 
-.form-names {
-    width: 100%;
+.form-name-label,
+.form-email-label,
+.form-number-label,
+.form-age-label {
+    @include label;
 }
 
-.form-name-label {
-    font-family: "ALK Sanet", sans-serif;
-    font-size: 3em;
-}
-
-.form-email-label {
-    font-family: "ALK Sanet", sans-serif;
-    font-size: 3em;
-    margin-top: 2%;
-}
-
-.form-message-label {
-    font-family: "ALK Sanet", sans-serif;
-    font-size: 3em;
-    margin-top: 2%;
-}
-
-.form-name-input {
-    width: 20%;
-    height: 50px;
-    font-size: 1.5em;
-    border: 0;
-    margin-top: 2%;
-
-    &:focus {
-        outline: none;
-    }
-}
-
-.form-email-input {
-    width: 20%;
-    height: 50px;
-    font-size: 1.5em;
-    margin-top: 2%;
-
-    &:focus {
-        outline: none;
-    }
-}
-
-.form-number-input {
-    width: 20%;
-    height: 50px;
-    font-size: 2em;
-    font-family: "ALK Sanet", sans-serif;
-    margin-top: 2%;
-
-    &:focus {
-        outline: none;
-    }
+.form-name-input,
+.form-email-input,
+.form-number-input,
+.form-age-input {
+    @include input;
 }
 
 .form-button-input {
     width: 15%;
-    height: 50px;
-    margin-top: 2%;
+    font-size: 2.5em;
+    border: 0;
+
+    &:focus {
+        outline: none;
+    }
 }
