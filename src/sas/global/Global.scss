@@ -4,18 +4,40 @@
     max-width: 1920px;
     margin: 0 auto;
 }
+// Fonts
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Antonio&display=swap');
+$roboto: 'Roboto Mono';
+$antonio: 'Antonio';
 
-// COLORS AND FONTS
+
+// Colors
+$red :#FF3131;
+$yellow :#FFF01F;
+$green :#39FF14;
+$blueLed :#1F51FF;
+$purple :#BC13FE;
+$pink :#FF1493;
 $blue: #5680E9;
 $blueWhite : #84CEEB;
 $sky : #5AB9EA;
 $grey: #C1C8E4;
 $purple : #7760D0;
 
+// GLOBAL Styles
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
 // Header
 header {
     width: 100%;
     max-width: 1920px;
+    padding: 20px;
     background-color: #957be0;
     display: flex;
     justify-content: space-around;
@@ -23,7 +45,7 @@ header {
 }
 
 .logo {
-    width: 100px;
+    width: 80px;
 }
 
 nav {
@@ -34,5 +56,67 @@ nav {
         justify-content: center;
         align-items: center;
         gap: 20px;
+        li{
+            font-family: $roboto;
+        }
     }
+}
+
+
+//  Classroom
+
+.classroom{
+    width: 100%;
+    min-height: calc(100vh - 100px);
+    background: linear-gradient(to right, $blueWhite, $blue);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+
+// Quiz ID Page
+.quiz {
+    flex-direction: column;
+    gap: 60px;
+    input {
+        width: 300px;
+        height: 150px;
+        background-color: white;
+        border: 10px solid white;
+        border-radius: 10px;
+        text-align: center;
+        box-shadow: 0px 0px 5px 5px white;
+        font-size: 40px;
+        font-family: $antonio;
+        color: $purple;
+
+        &:focus {
+            outline: none;
+        }
+    }
+
+    button {
+        width: 180px;
+        height: 70px;
+        border-radius: 10px;
+        border: none;
+        font-size: 30px;
+        font-family: $antonio;
+        color: $purple;
+        cursor: not-allowed;
+    }
+}
+
+// Animations 
+@keyframes buttons {
+    100% {
+        transform: scale(1.2)
+    }
+}
+
+.animateButtons {
+    animation: buttons 1s infinite linear alternate;
 }

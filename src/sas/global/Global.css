@@ -1,16 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Antonio&display=swap");
 .page-container {
   width: 100%;
   max-width: 1920px;
   margin: 0 auto;
 }
 
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 header {
   width: 100%;
   max-width: 1920px;
+  padding: 20px;
   background-color: #957be0;
   display: flex;
   justify-content: space-around;
   align-items: center;
+}
+
+.logo {
+  width: 80px;
 }
 
 nav {
@@ -18,12 +31,69 @@ nav {
   width: -moz-fit-content;
   width: fit-content;
 }
-
 nav ul {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 20px;
 }
+nav ul li {
+  font-family: "Roboto Mono";
+}
 
-/*# sourceMappingURL=Global.css.map */
+.classroom {
+  width: 100%;
+  min-height: calc(100vh - 100px);
+  background: linear-gradient(to right, #84CEEB, #5680E9);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+.quiz {
+  flex-direction: column;
+  gap: 60px;
+}
+.quiz input {
+  width: 300px;
+  height: 150px;
+  background-color: white;
+  border: 10px solid white;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0px 0px 5px 5px white;
+  font-size: 40px;
+  font-family: "Antonio";
+  color: #7760D0;
+}
+.quiz input:focus {
+  outline: none;
+}
+.quiz button {
+  width: 180px;
+  height: 70px;
+  border-radius: 10px;
+  border: none;
+  font-size: 30px;
+  font-family: "Antonio";
+  color: #7760D0;
+  cursor: not-allowed;
+}
+
+@-webkit-keyframes buttons {
+  100% {
+    transform: scale(1.2);
+  }
+}
+
+@keyframes buttons {
+  100% {
+    transform: scale(1.2);
+  }
+}
+.animateButtons {
+  -webkit-animation: buttons 1s infinite linear alternate;
+          animation: buttons 1s infinite linear alternate;
+}/*# sourceMappingURL=Global.css.map */
