@@ -20,19 +20,19 @@ export const ContactUs = () => {
         <form ref={form} onSubmit={sendEmail} className='bootcamp-form'>
 
             <label className="form-name-label">სახელი</label>
-            <input className="form-name-input form-all-input" placeholder="სახელი" type="text" name="name" />
+            <input required className="form-name-input form-all-input" placeholder="   სახელი" type="text" name="name" />
 
             <label className="form-name-label">გვარი</label>
-            <input className="form-name-input" placeholder="გვარი" type="text" name="lastname" />
+            <input required className="form-name-input" placeholder="   გვარი" type="text" name="lastname" />
 
             <label className="form-age-label">ასაკი</label>
-            <input className="form-age-input" type="number" placeholder="ასაკი" name="age" />
+            <input required className="form-age-input" type="number" placeholder="   ასაკი" name="age" />
 
             <label className="form-email-label">მეილი</label>
-            <input className="form-email-input" type="email" placeholder="მეილი" name="mail" />
+            <input required className="form-email-input" type="email" placeholder="   მეილი" name="mail" />
 
             <label className="form-number-label">ნომერი</label>
-            <input className="form-number-input" type="number" name="number" placeholder="ნომერი" />
+            <input required className="form-number-input" type="number" name="number" placeholder="   ნომერი" />
 
             <input className="form-button-input" type="submit" value="გაგზავნა" />
         </form >
