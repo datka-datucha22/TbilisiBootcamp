@@ -6,14 +6,14 @@ export default function Program() {
   function checkID(e) {
     for (let quiz of programs) {
       if (quiz.id === e.target.value) {
-        document.querySelector('.takequiz').removeAttribute('disabled')
-        document.querySelector('.takequiz').style.cursor = 'pointer'
-        document.querySelector('.takequiz').classList.add('animateButtons')
+        document.querySelector('.cruisine').removeAttribute('disabled')
+        document.querySelector('.cruisine').style.cursor = 'pointer'
+        document.querySelector('.cruisine').classList.add('animateButtons')
 
       } else {
-        document.querySelector('.takequiz').setAttribute('disabled', 'true')
-        document.querySelector('.takequiz').style.cursor = 'not-allowed'
-        document.querySelector('.takequiz').classList.remove('animateButtons')
+        document.querySelector('.cruisine').setAttribute('disabled', 'true')
+        document.querySelector('.cruisine').style.cursor = 'not-allowed'
+        document.querySelector('.cruisine').classList.remove('animateButtons')
 
       }
     }
@@ -21,9 +21,9 @@ export default function Program() {
 
   return (
     <div className="quiz center">
-      <input type="text" spellcheck="false" value={id} onChange={(e) => { setID(e.target.value); checkID(e);}} onClick={(e) => { if (e.target.value === 'Enter Classroom ID') { e.target.value = '' } }}
+      <input type="text" spellCheck="false" value={id} onChange={(e) => { setID(e.target.value); checkID(e);}} onClick={(e) => { if (e.target.value === 'Enter Classroom ID') { e.target.value = '' } }}
         onMouseLeave={(e) => { if (e.target.value === '') { e.target.value ='Enter Classroom ID'}}} />
-      <button className='takequiz' disabled='true'>Join</button>
+      <button className='takequiz cruisine' disabled={true}>Join</button>
     </div>
   )
 }

@@ -8,6 +8,7 @@ import Error from "./Pages/Error";
 
 import './Reset.css'
 import '../src/sas/global/Global.css'
+import StartedQuiz from "./Pages/StartedQuiz";
 function App() {
   return (
     <div className='page-container'>
@@ -18,8 +19,10 @@ function App() {
           <Route path="about" element={<About />} />
           <Route path="classroom" element={<Classroom />} />
         </Route>
+        <Route path="classroom/quizes/:id" element={<StartedQuiz />} />
         <Route path="*" element={<Error />} />
       </Routes>
+
     </div>
   );
 }
