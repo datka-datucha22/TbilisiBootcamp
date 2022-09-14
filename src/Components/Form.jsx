@@ -17,15 +17,26 @@ export const ContactUs = () => {
 
 
     return (
-        <form ref={form} onSubmit={sendEmail}>
-            <label className="form-name-label">Name</label>
-            <input className="form-name-input" type="text" name="to_name" />
-            <label className="form-email-label">Email</label>
-            <input className="form-email-input" type="email" name="from_name" />
-            <label className="form-message-label">Message</label>
-            <textarea className="form-message-input" name="message" />
-            <input className="form-button-input" type="submit" value="Send" />
-        </form>
+        <form ref={form} onSubmit={sendEmail} className='bootcamp-form'>
+
+            <label className="form-name-label">სახელი</label>
+            <input className="form-name-input form-all-input" placeholder="სახელი" type="text" name="name" />
+
+            <label className="form-name-label">გვარი</label>
+            <input className="form-name-input" placeholder="გვარი" type="text" name="lastname" />
+
+            <label className="form-age-label">ასაკი</label>
+            <input className="form-age-input" type="number" placeholder="ასაკი" name="age" />
+
+            <label className="form-email-label">მეილი</label>
+            <input className="form-email-input" type="email" placeholder="მეილი" name="mail" />
+
+            <label className="form-number-label">ნომერი</label>
+            <input className="form-number-input" type="number" name="number" placeholder="ნომერი" />
+
+
+            <input className="form-button-input" type="submit" value="გაგზავნა" />
+        </form >
     );
 };
 export default ContactUs

@@ -1,1 +1,55 @@
-/*# sourceMappingURL=Home.css.map */
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.home {
+  width: 100%;
+  background: linear-gradient(to right, #84CEEB, #5680E9);
+  min-height: calc(100vh - 120px);
+}
+
+.bootcamp-form {
+  min-height: calc(100vh - 120px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: 30%;
+}
+
+.form-name-label,
+.form-email-label,
+.form-number-label,
+.form-age-label {
+  font-family: "ALK Sanet", sans-serif;
+  font-size: 3em;
+  color: #ffee00;
+}
+
+.form-name-input,
+.form-email-input,
+.form-number-input,
+.form-age-input {
+  width: 30%;
+  height: 50px;
+  font-size: 1.5em;
+  border: 0;
+  margin: 1% 0;
+}
+.form-name-input:focus,
+.form-email-input:focus,
+.form-number-input:focus,
+.form-age-input:focus {
+  outline: none;
+}
+
+.form-button-input {
+  width: 15%;
+  font-size: 2.5em;
+  border: 0;
+}
+.form-button-input:focus {
+  outline: none;
+}/*# sourceMappingURL=Home.css.map */
