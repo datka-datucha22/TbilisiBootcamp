@@ -6,11 +6,8 @@ input[type=number]::-webkit-inner-spin-button {
 
 .home {
   width: 100%;
-  background-image: url(../../Images/Icons/meama.jpg);
+  background: linear-gradient(to right, #84CEEB, #5680E9);
   min-height: calc(100vh - 120px);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 .bootcamp-form {
@@ -20,16 +17,7 @@ input[type=number]::-webkit-inner-spin-button {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-left: 70%;
-}
-
-.form-name-label,
-.form-email-label,
-.form-number-label,
-.form-age-label {
-  font-family: "ALK Sanet", sans-serif;
-  font-size: 3em;
-  color: #5680E9;
+  margin-left: 60%;
 }
 
 .form-name-input,
@@ -39,14 +27,36 @@ input[type=number]::-webkit-inner-spin-button {
   width: 100%;
   height: 50px;
   font-size: 1.5em;
+  border-radius: 10px;
   border: 0;
-  margin: 1% 0;
+  margin: 5% 0;
+  background-color: rgba(169, 121, 232, 0.568627451);
+  color: white;
+  padding-left: 5%;
+}
+.form-name-input::-moz-placeholder, .form-email-input::-moz-placeholder, .form-number-input::-moz-placeholder, .form-age-input::-moz-placeholder {
+  color: rgba(255, 240, 31, 0.8078431373);
+}
+.form-name-input:-ms-input-placeholder, .form-email-input:-ms-input-placeholder, .form-number-input:-ms-input-placeholder, .form-age-input:-ms-input-placeholder {
+  color: rgba(255, 240, 31, 0.8078431373);
+}
+.form-name-input::placeholder,
+.form-email-input::placeholder,
+.form-number-input::placeholder,
+.form-age-input::placeholder {
+  color: rgba(255, 240, 31, 0.8078431373);
 }
 .form-name-input:focus,
 .form-email-input:focus,
 .form-number-input:focus,
 .form-age-input:focus {
   outline: none;
+}
+
+.form-text {
+  font-family: "ALK Sanet", sans-serif;
+  font-size: 20px;
+  margin: 2%;
 }
 
 .form-button-input {

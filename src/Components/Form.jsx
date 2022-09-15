@@ -1,5 +1,7 @@
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
+import swal from 'sweetalert';
+
 
 export const ContactUs = () => {
     const form = useRef();
@@ -9,7 +11,9 @@ export const ContactUs = () => {
 
         emailjs.sendForm('service_akv11bp', 'template_wqq6rle', form.current, 'hOYAjVD0_Wd484GZt')
             .then((result) => {
-                alert('message sented')
+                // alert('message sented')
+                swal("", "თქვენი თხოვნა მიღებულია", "success");
+
             }, (error) => {
                 console.log(error.text);
             });
@@ -18,20 +22,22 @@ export const ContactUs = () => {
 
     return (
         <form ref={form} onSubmit={sendEmail} className='bootcamp-form'>
+            <span className='form-text'>კურსზე რეგისტრაციისათვის </span>
+            <span className='form-text'>შეავსეთ ფორმა</span>
 
-            <label className="form-name-label">სახელი</label>
+
             <input required className="form-name-input form-all-input" placeholder="   სახელი" type="text" name="name" />
 
-            <label className="form-name-label">გვარი</label>
+
             <input required className="form-name-input" placeholder="   გვარი" type="text" name="lastname" />
 
-            <label className="form-age-label">ასაკი</label>
+
             <input required className="form-age-input" type="number" placeholder="   ასაკი" name="age" />
 
-            <label className="form-email-label">მეილი</label>
+
             <input required className="form-email-input" type="email" placeholder="   მეილი" name="mail" />
 
-            <label className="form-number-label">ნომერი</label>
+
             <input required className="form-number-input" type="number" name="number" placeholder="   ნომერი" />
 
             <input className="form-button-input" type="submit" value="გაგზავნა" />

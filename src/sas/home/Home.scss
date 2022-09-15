@@ -9,19 +9,27 @@ input[type="number"]::-webkit-inner-spin-button {
 
 
 
-@mixin label {
-    font-family: "ALK Sanet", sans-serif;
-    font-size: 3em;
-    color: #5680E9;
-}
+// @mixin label {
+//     font-family: "ALK Sanet", sans-serif;
+//     font-size: 3em;
+//     color: #5680E9;
+// }
 
 @mixin input {
     width: 100%;
     height: 50px;
     font-size: 1.5em;
+    border-radius: 10px;
     border: 0;
-    margin: 1% 0;
+    margin: 5% 0;
+    background-color: #a979e891;
+    color: white;
+    padding-left: 5%;
 
+    &::placeholder {
+        color: #fff01fce;
+
+    }
 
     &:focus {
         outline: none;
@@ -32,11 +40,8 @@ input[type="number"]::-webkit-inner-spin-button {
 
 .home {
     width: 100%;
-    background-image: url(../../Images/Icons/meama.jpg);
+    background: linear-gradient(to right, #84CEEB, #5680E9);
     min-height: calc(100vh - 120px);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
 .bootcamp-form {
@@ -46,21 +51,27 @@ input[type="number"]::-webkit-inner-spin-button {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-left: 70%;
+    margin-left: 60%;
 }
 
-.form-name-label,
-.form-email-label,
-.form-number-label,
-.form-age-label {
-    @include label;
-}
+// .form-name-label,
+// .form-email-label,
+// .form-number-label,
+// .form-age-label {
+//     @include label;
+// }
 
 .form-name-input,
 .form-email-input,
 .form-number-input,
 .form-age-input {
     @include input;
+}
+
+.form-text {
+    font-family: "ALK Sanet", sans-serif;
+    font-size: 20px;
+    margin: 2%;
 }
 
 .form-button-input {
