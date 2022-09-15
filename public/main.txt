@@ -10,3 +10,8 @@ blueWhite - #84CEEB
 sky - #5AB9EA
 grey - #C1C8E4
 purple - #7760D0
+
+
+
+npm install sweetalert2
+FOR FORM ALERTS
