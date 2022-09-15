@@ -1,23 +1,22 @@
 {
   "files": {
-    "main.css": "/TbilisiBootcamp/static/css/main.b661f28d.css",
-    "main.js": "/TbilisiBootcamp/static/js/main.b3bf3870.js",
+    "main.css": "/TbilisiBootcamp/static/css/main.f3718cd8.css",
+    "main.js": "/TbilisiBootcamp/static/js/main.cf83cc3e.js",
     "static/js/787.0bbfc8ff.chunk.js": "/TbilisiBootcamp/static/js/787.0bbfc8ff.chunk.js",
     "static/media/phone.gif": "/TbilisiBootcamp/static/media/phone.948e24c8baa711af7261.gif",
     "static/media/home.gif": "/TbilisiBootcamp/static/media/home.1954874baf3f807dc5fa.gif",
     "static/media/info.gif": "/TbilisiBootcamp/static/media/info.2e2b249413848079df36.gif",
     "static/media/classroom.gif": "/TbilisiBootcamp/static/media/classroom.e338093589ddd9f38a85.gif",
-    "static/media/meama.jpg": "/TbilisiBootcamp/static/media/meama.4c4f400f9cbf69e4c06a.jpg",
     "static/media/Logo-Icon.png": "/TbilisiBootcamp/static/media/Logo-Icon.ed6283e6efe4ac553e6d.png",
     "static/media/info.png": "/TbilisiBootcamp/static/media/info.6668052465a3f0256d48.png",
     "static/media/phone.png": "/TbilisiBootcamp/static/media/phone.2ce45c31b5da248aa65b.png",
     "index.html": "/TbilisiBootcamp/index.html",
-    "main.b661f28d.css.map": "/TbilisiBootcamp/static/css/main.b661f28d.css.map",
-    "main.b3bf3870.js.map": "/TbilisiBootcamp/static/js/main.b3bf3870.js.map",
+    "main.f3718cd8.css.map": "/TbilisiBootcamp/static/css/main.f3718cd8.css.map",
+    "main.cf83cc3e.js.map": "/TbilisiBootcamp/static/js/main.cf83cc3e.js.map",
     "787.0bbfc8ff.chunk.js.map": "/TbilisiBootcamp/static/js/787.0bbfc8ff.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b661f28d.css",
-    "static/js/main.b3bf3870.js"
+    "static/css/main.f3718cd8.css",
+    "static/js/main.cf83cc3e.js"
   ]
 }
